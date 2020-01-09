@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title> PlaceHolder Bookings Prototype</title>
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <h1>
+                PlaceHolder Bookings
+            </h1>
+
+            <h2> Create a new event </h2>
+
+            <div class="create-event-form">
+                <form action="php/createnewevent.php" method="post">
+                    Event Title: 
+                    <input type="text" name="eventtitle"><br/>
+
+                    Date: 
+                    <input type="date" name="eventdate"><br/>
+
+                    Start Time: 
+                    <input type="time" name="eventstarttime"><br/>
+
+                    End Time: 
+                    <input type="time" name="eventendtime"><br/>
+
+                    Event Category:
+                    <select name="eventcategory">
+                        <option value="wedding">Wedding</option>
+                        <option value="gig">Gig</option>
+                        <option value="party">Party</option>
+                        <option value="film-showing">Film Showing</option>
+                    </select><br />
+
+                    Location: 
+                    <select name="eventlocation">
+                        <option value="leicester">Leicester</option>
+                        <option value="london">London</option>
+                        <option value="nottingham">Nottingham</option>
+                        <option value="bristol">Bristol</option>
+                      </select> 
+
+                    <br/>
+                    <input type="submit" value="Submit">
+                </form>
+                <p> <a href="pages/display_events.php" name="DisplayEvents">Display All Events </a> </p>
+            </div>
+
+        </div> 
+
+    </body>
+
+</html>
